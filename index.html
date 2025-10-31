@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Любовное письмо</title>
+    <meta name="description" content="Тёплое любовное послание с эффектом набора текста.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="background-layer" aria-hidden="true"></div>
+
+    <main class="page">
+      <section class="letter">
+        <header class="letter__header">
+          <h1 class="letter__title">Для тебя</h1>
+          <div class="letter__subtitle">Ты мой лучик света в этом мире</div>
+        </header>
+
+        <article class="letter__paper" aria-live="polite" aria-label="Любовное письмо с анимацией набора текста">
+          <div class="letter__text" id="letterText">
+            <span id="letterContent"></span>
+            <span class="caret" id="caret" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <footer class="letter__footer">
+          <button class="btn" id="restartBtn" type="button" aria-label="Воспроизвести ещё раз">Ещё раз</button>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
